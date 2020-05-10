@@ -13,7 +13,7 @@ const causeOfDeath = (cause) =>
 
 const atTheStart = Page.dialog(
   <p>
-    You are at the <b>starting</b> line. It's time to go.
+    You are at the <b>begin</b> line. It's time to go.
   </p>,
 )
   .addChoice('Gas', 'You press down on the gas pedal.', () => startingToMove)
