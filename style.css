@@ -1,79 +1,80 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: monospace;
-	font-size: 14px;
-	width: 50%;
-	margin: 0 auto;
+  font-family: monospace;
+  font-size: 14px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #welcome {
-	font-weight: bold;
-	font-size: 18px;
-	text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }
 
 #start {
-	cursor: pointer;
-	text-align: center;
-	padding: 5px;
-	border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
 }
 
 #start:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 #play-again {
-	cursor: pointer;
-	text-align: center;
-	padding: 5px;
-	color: red;
-	border: 1px solid red;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  color: red;
+  border: 1px solid red;
 }
 
 #play-again:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .current-page {
-	padding: 8px;
+  padding: 8px;
 }
 
 .choices {
-	margin-top: 8px;
-	display: flex;
+  margin-top: 8px;
+  display: flex;
 }
 
 .choice {
-	padding: 5px;
-	color: blue;
-	border: 1px solid blue;
-	margin-right: 8px;
-	cursor: pointer;
+  padding: 5px;
+  color: blue;
+  border: 1px solid blue;
+  margin-right: 8px;
+  cursor: pointer;
 }
 
 .latestChoice {
-	font-style: italic;
+  font-style: italic;
+  color: blue;
 }
 
 .choice:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .death-message {
-	color: red;
-	font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 #storyLog {
-	padding-top: 5px;
+  padding-top: 5px;
 }
 
 .history-item {
-	border-top: 1px dashed #aaa;
-	padding: 8px;
-	margin: 8px 0;
+  border-top: 1px dashed #aaa;
+  padding: 8px;
+  margin: 8px 0;
 }

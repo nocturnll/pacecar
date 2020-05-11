@@ -20,11 +20,8 @@ const atTheStart = Page.dialog(
     <p>
       You are at the <b>starting</b> line. It's time to go.
     </p>
-    ,
   </>,
-)
-  .addChoice('Gas', 'You press down on the gas pedal.', () => startingToMove)
-  .addChoice('Do nothing', 'You do nothing.', () => TBD);
+).addChoice('Gas', 'You press down on the gas pedal.', () => startingToMove);
 
 const startingToMove = Page.dialog(
   <>
@@ -33,8 +30,7 @@ const startingToMove = Page.dialog(
   </>,
 )
   .addChoice('Even more gas', 'You really put the pedal to the medal.', () => TBD)
-  .addChoice('Brake', 'You slam on the brakes.', () => brakingInTheStraightaway)
-  .addChoice('Turn right', 'You turn the wheel as hard as you can to the right.', () => TBD);
+  .addChoice('Brake', 'You slam on the brakes.', () => brakingInTheStraightaway);
 
 const brakingInTheStraightaway = Page.dialog(
   <>
@@ -48,7 +44,10 @@ const brakingInTheStraightaway = Page.dialog(
 const doingNothingOnTheStraightaway = Page.dialog(
   <>
     <p>You sit in the car. It's a nice day. There's barely a cloud in the sky.</p>
-    <p>You can hear confusion in the announcer's voice. The crowd is agitated. Somewhere behind you, a car honks.</p>
+    <p>
+      You can hear confusion in the announcer's voice. The crowd is agitated. A car honks behind you. (These racecars come equipped with horns. It's standard issue these days, to scare the stray geese
+      off of the racetrack.)
+    </p>
   </>,
 )
   .addChoice('Gas', 'You put your foot back on the gas.', () => TBD)
@@ -61,7 +60,6 @@ const turnOnTheRadioOnTheStraightaway = Page.dialog(
   </>,
 )
   .addChoice('Gas', 'You put your foot back on the gas.', () => radioOnDrivingStraightaway)
-  .addChoice('Change the station', 'You change the radio station.', () => TBD)
   .addChoice('Do nothing', 'You do nothing.', () => radioOnDoingNothingStraightaway);
 
 const radioOnDoingNothingStraightaway = Page.dialog(
@@ -71,7 +69,6 @@ const radioOnDoingNothingStraightaway = Page.dialog(
   </>,
 )
   .addChoice('Roll down the window', 'You roll down the window.', () => TBD)
-  .addChoice('Gas', 'You put your foot back on the gas.', () => TBD)
   .addChoice('Do nothing', 'You continue to do nothing.', () => radioOnManAtWindowStraightaway);
 
 const radioOnManAtWindowStraightaway = Page.dialog(
@@ -80,7 +77,6 @@ const radioOnManAtWindowStraightaway = Page.dialog(
     <p>He pulls on your car door. It's locked. He bangs on the window. Nothing happens. You are safe in your car.</p>
   </>,
 )
-  .addChoice('Change the station', 'You change the radio station.', () => TBD)
   .addChoice('Roll down the window', 'You roll down the window.', () => TBD)
   .addChoice('Do nothing', 'You continue to do nothing at all.', () => radioOnManAtWindowDoNothingStraightaway);
 
@@ -97,8 +93,8 @@ const radioOnManAtWindowDoNothingStraightaway = causeOfDeath(
 
 const radioOnDrivingStraightaway = Page.dialog(
   <>
-    <p>Ariana hits a high note. You hit the gas.</p>
-    <p>The cars behind you start up again. In the distance, a booming, crackling voice reassures the crowd.</p>
+    <p>Ariana hits a high note, and you hit the gas.</p>
+    <p>The cars behind you start up again. Nearby, a booming, crackling voice reassures the crowd.</p>
     <p>You're still on a straightaway.</p>
   </>,
 )
