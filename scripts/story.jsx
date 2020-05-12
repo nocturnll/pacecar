@@ -29,7 +29,7 @@ const startingToMove = Page.dialog(
     <p>The course begins with a straightaway.</p>
   </>,
 )
-  .addChoice('Even more gas', 'You really put the pedal to the medal.', () => TBD)
+  .addChoice('Gas', 'You really put the pedal to the metal.', () => TBD)
   .addChoice('Brake', 'You slam on the brakes.', () => brakingInTheStraightaway);
 
 const brakingInTheStraightaway = Page.dialog(
@@ -110,7 +110,7 @@ const turnRightIntoWall = causeOfDeath(
   </>,
 );
 
-const TBD = Page.dialog(
+const TBD = causeOfDeath(
   <p>
     There's nothing here.
     <br />
